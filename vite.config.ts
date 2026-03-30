@@ -6,5 +6,7 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(), // [!code ++]
+
   ],
+  base: '/D4Dchallenge/'
 })
