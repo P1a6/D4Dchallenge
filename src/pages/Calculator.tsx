@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-type InputMode = "roof" | "kWp";
+type InputMode = "roof" | "kWp" | "address";
 
 interface CalculatorInputs {
   roofSize: string;
@@ -181,7 +181,7 @@ export default function CalculatorPage() {
                 type="button"
                 onClick={() => { setMode("kWp"); setError(""); }}
                 className={`px-4 py-2 text-sm font-medium transition-colors ${
-                  mode === "" ? "bg-sky-500 text-white" : "bg-white text-gray-600 hover:bg-gray-50"
+                  mode === "address" ? "bg-sky-500 text-white" : "bg-white text-gray-600 hover:bg-gray-50"
                 }`}
               >
                 Address
